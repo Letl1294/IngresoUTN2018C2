@@ -1,8 +1,14 @@
 function mostrar()
-{	//Genero el número RANDOM entre 1 y 10 
-var ran;
+{
+	//Genero el número RANDOM entre 1 y 10
+	 var num;
 
-document.getElementById("FormIngreso").value = ran;
-ran = prompt(2);
 
-}//FIN DE LA FUNCIÓN
+  num = Math.floor(Math.random()*10+1);
+alert("Número aleatorio entre 1 y 10:"+ num);
+
+
+}
+	
+
+//FIN DE LA FUNCIÓN
