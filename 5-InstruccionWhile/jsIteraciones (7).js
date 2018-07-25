@@ -8,6 +8,7 @@ function mostrar()
 
 while(respuesta=="si"){
 	numero = parseInt(prompt("Ingrese un numero "));
+	respuesta = respuesta.toLowerCase();
     acumulador=acumulador + numero;
 	contador++;
 	respuesta = prompt("Quiere seguir agregando numeros?");

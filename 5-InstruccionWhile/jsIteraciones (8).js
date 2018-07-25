@@ -5,17 +5,20 @@ function mostrar()
 	var positivo=0;
 	var negativo=1;
 	var respuesta='si';
-
+	
 	while(respuesta=="si"){
-		contador = parseint(prompt("Ingrese un numero"));
+		respuesta = respuesta.toLowerCase();
+		contador = parseInt(prompt("Ingrese un numero"));
+		
 		if(contador>0)
 		{
-			positivo = contador + positivo 
+			positivo = contador + positivo; 
 		}
          else if(contador<0)
 		 {
-			 
+			negativo = contador * negativo;
 		 }
+		respuesta=prompt("Quiere ingresar otro numero");
 }
 
 document.getElementById('suma').value=positivo;
