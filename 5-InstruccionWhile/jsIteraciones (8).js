@@ -5,23 +5,30 @@ function mostrar()
 	var positivo=0;
 	var negativo=1;
 	var respuesta='si';
-	
+	var num;
+
 	while(respuesta=="si"){
-		respuesta = respuesta.toLowerCase();
-		contador = parseInt(prompt("Ingrese un numero"));
 		
-		if(contador>0)
+		numero = parseInt(prompt("Ingrese un numero"));
+		
+		if(numero>0)
 		{
-			positivo = contador + positivo; 
+			positivo = numero + positivo; 
 		}
-         else if(contador<0)
+         else if(numero<0)
 		 {
-			negativo = contador * negativo;
+			negativo = numero * negativo;
+            contador++;
 		 }
+	
 		respuesta=prompt("Quiere ingresar otro numero");
-}
+		respuesta = respuesta.toLowerCase();
+	}
 
 document.getElementById('suma').value=positivo;
+			if(contador == 0){
+			negativo = 0;
+		 }
 document.getElementById('producto').value=negativo;
 
 }//FIN DE LA FUNCIÓN

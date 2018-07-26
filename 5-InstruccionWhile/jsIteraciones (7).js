@@ -14,6 +14,17 @@ while(respuesta=="si"){
 	respuesta = prompt("Quiere seguir agregando numeros?");
 }
 
+//do{
+//	numero = parseInt(prompt("Ingrese el numero "));
+//	respuesta = respuesta.toLowerCase(); 
+//	acumulador=acumulador + numero;
+//	contador++;
+//	respuesta = prompt("Quiere seguir agregando numeros?");
+//}
+//while(respuesta=="si"){
+
+//}
+
 
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/contador;
