@@ -1,16 +1,15 @@
 function mostrar()
 {
-    for(;;){
-
-        var numero = parseInt(prompt("Ingrese un numero"));
-
-        if(numero==9){
-            break;
-        }
-
+numero = parseInt(prompt("Ingrese un numero"));
+for(var i=0;i<numero;i++){
+    
+    if(i==9){
+        break;
     }
 
+    console.log(i)
 
+}
 
 
 }//FIN DE LA FUNCIÓN

@@ -1,7 +1,8 @@
 function mostrar()
 {
-for(var i=1; i<11; i++){
-    alert(i)
-}
+for(var i=1;i<=10;i++){
 
+    console.log(i);
+
+}
 }

@@ -1,12 +1,14 @@
 function mostrar()
 {
-for(;;){ 
+for(var i=1;i<100;i++){
 
-var numero=parseInt(prompt("Ingrese un numero"));    
+ document.write(i+"<br>");   
+    if(i==21){
+        break;
+    }
 
-if(numero==15){
-break;
 }
 
 
-}}
+
+}//FIN DE LA FUNCIÓN

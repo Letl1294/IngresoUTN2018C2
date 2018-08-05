@@ -1,15 +1,17 @@
 function mostrar()
 {
-var numero=parseInt(prompt("Ingrese un numero"));
-var contador = 0;
+var numero = parseInt(prompt("Ingrese un numero"));
+var div=0;
 
-for(var i=0;i<numero;i++){
+for(var i=1;i<numero;i++){
 
     if(numero%i==0){
-    console.log(i);
-    contador++;
+        document.write(i+"<br>");
+        div++;
     }
-    
+
 }
-console.log("Divisores "+contador)
+
+document.write("Total de divisores "+div );
+
 }//FIN DE LA FUNCIÓN

@@ -1,17 +1,16 @@
 function mostrar()
 {
-var numero=parseInt(prompt("Ingrese un numero"));
-var contador = 0;
-
-for(var i=1;i<numero;i++){
+var numero = parseInt(prompt("Ingrese un numero"));
+var par=0;
+for(i=1;i<numero;i++){
+    
     if(i%2==0){
-        console.log(i);
-        contador++;
+        document.write(i+"<br>")
+        par++;
     }
 
 }
-console.log("pares "+contador);
 
-
+document.write("Total de pares "+par);
 
 }//FIN DE LA FUNCIÓN
